@@ -1,9 +1,12 @@
 import Card from '../Components/Card'
 import { Grid } from '@mui/material';
+import Head from 'next/head';
+
 
 function Userlist({ data }) {
     return (
         <>
+            <Head><title>Get Static</title></Head>
             <Grid align='center'><h1>static Props</h1></Grid>
             <Grid container spacing={2}>
                 {data.map((item) => (

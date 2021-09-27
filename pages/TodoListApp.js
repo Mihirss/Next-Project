@@ -11,6 +11,8 @@ import Snackbar from '@mui/material/Snackbar';
 import RestoreIcon from '@mui/icons-material/Restore';
 import { v4 as uuidv4 } from 'uuid';
 import {Alert,AlertTitle} from '@mui/material';
+import Head from 'next/head';
+
 
 
 
@@ -92,9 +94,7 @@ const TodoList = () => {
   // taskName = name
   return (
     <>
-      {/* Make this into new component
-    TodolistContainer
-    */}
+      <Head><title>To-Do List</title></Head>
       <Grid align='center'>
         <Paper elevation={24} style={paperstyle}>
           <Grid align='center'>
