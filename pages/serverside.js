@@ -4,7 +4,7 @@ import { Grid } from '@mui/material';
 function Userlist({ data }) {
     return (
         <>
-            <Grid align='center'><h1>static Props</h1></Grid>
+            <Grid align='center'><h1>Server Side Props</h1></Grid>
             <Grid container spacing={2}>
                 {data.map((item) => (
                     <Card item={item} />
@@ -17,7 +17,7 @@ function Userlist({ data }) {
 export default Userlist
 
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
 
     const res = await fetch('https://reqres.in/api/users')
     const data = await res.json()
