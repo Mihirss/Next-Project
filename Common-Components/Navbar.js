@@ -1,30 +1,15 @@
 import React from "react";
-// im } from "react-router-dom";
-
-// import './index.css';
+import Link from 'next/link'
 
 const Navbar = () => {
     return (
         <>
-            <div className="container-fluid nav_bg">
-                <div className="row">
-                    <div className="col-10 mx-auto">
-                        <nav className="navbar navbar-light bg-transparent">
-                            <div className="container-fluid">
-                                <Link className="navbar-brand" to="/">Mr.Xmen</Link>
-                                    <ul id="navbar" className="navbar-nav">
-                                        <li  className="nav-item">
-                                            <Link exact className="nav-link" to="/">Home</Link>
-                                        </li>
-                                        <li className="nav-item">
-                                            <Link exact className="nav-link" to="/Feed">Feed</Link>
-                                        </li>
-                                    </ul>
-                                </div>
-                        </nav>
-                    </div>
-                </div>
-            </div>
+            <ul>
+                <li><Link href='/TodoListApp'><a>To-Do list</a></Link></li>
+                <li><Link href='/Feed'><a>Feed Page</a></Link></li>
+                <li><Link href='/getstatic'><a>Get Static Method</a></Link></li>
+                <li><Link href='/serverside'><a>Ger Serverside Method</a></Link></li>
+            </ul>
         </>
     )
 }
