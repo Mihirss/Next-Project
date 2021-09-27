@@ -24,7 +24,7 @@ function Feeditem() {
     }, [])
     return (
         <>
-
+        <Grid align='center'><h1>Feed Page</h1></Grid>
             <Grid container spacing={2}>
                 {feedData.map((item) => (
                     <Card item={item} />

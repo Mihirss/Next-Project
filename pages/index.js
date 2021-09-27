@@ -1,11 +1,15 @@
-import React from 'react'
-import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
-import Home from './TodoListApp'
+import React from "react";
+import Link from 'next/link'
 
 export default function App() {
     return (
         <>
-            <Home/>
+                <ul>
+                    <li><Link href='/TodoListApp'><a>To-Do list</a></Link></li>
+                    <li><Link href='/Feed'><a>Feed Page</a></Link></li>
+                    <li><Link href='/getstatic'><a>Get Static Method</a></Link></li>
+                    <li><Link href='/serverside'><a>Ger Serverside Method</a></Link></li>
+                </ul>
         </>
     )
 }
