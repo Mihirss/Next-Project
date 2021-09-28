@@ -11,6 +11,10 @@ const Navbar = () => {
                 <li><Link href='/Feed'><a>Feed Page</a></Link></li>
                 <li><Link href='/getstatic'><a>Get Static Method</a></Link></li>
                 <li><Link href='/serverside'><a>Ger Serverside Method</a></Link></li>
+                <li><Link href="/[slug]" as="users/2">
+                    <a>First Feesd 1</a>
+                    </Link>
+                </li>
             </ul>
         </>
     )
