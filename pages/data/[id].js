@@ -11,7 +11,7 @@ function Userlist({ data }) {
             <Head><title>Slug Passing</title></Head>
             <Grid align='center'><h1>slug</h1></Grid>
             <Grid container spacing={2}>
-                    <Card item={data} />
+                <Card item={data} />
             </Grid>
         </>
     )
@@ -21,8 +21,6 @@ export default Userlist
 
 
 export async function getStaticProps(context) {
-    // const router = useRouter();
-    // const {slug} = router.query;
     const id = context.params.id;
 
 
@@ -44,8 +42,7 @@ export async function getStaticPaths() {
     const posts = post.data
 
     const paths = posts.map((item) => ({
-
         params: { id: item.id.toString() },
-      }))
-      return { paths, fallback: false }
+    }))
+    return { paths, fallback: false }
 }
