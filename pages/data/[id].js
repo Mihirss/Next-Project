@@ -1,8 +1,6 @@
 import Card from '../../Components/Card'
 import { Grid } from '@mui/material';
 import Head from 'next/head';
-import { useRouter } from 'next/router'
-
 
 
 function Userlist({ data }) {
